@@ -1,0 +1,26 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+                    <form class="form-control" action="" method="get">
+                        <input class="form-element" type="color" name="seed" id="seed">
+                        <select class="center-element" name="mode" id="mode">
+                            <option value="">Monochrome</option>
+                            <option value="">Monochrome-dark</option>
+                            <option value="">Monochrome-light</option>
+                            <option value="">Analogic</option>
+                            <option value="">Complement</option>
+                            <option value="">Analogic-complement</option>
+                            <option value="">Triad</option>
+                        </select>
+                        <button class="form-element" id="color" type="button">Get Colors</button>
+                    </form>
+            <div class="display-color">
+                <p id="show"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
