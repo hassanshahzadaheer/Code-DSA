@@ -1,3 +1,4 @@
+# Challenge - 4 To Title Case 
 ### example of simple loop first, and  demonstrate the equivalent functionality using the `map` function.
 
 Example using a loop:
