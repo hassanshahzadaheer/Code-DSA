@@ -1,4 +1,75 @@
-## Push Operation in Array
+<details>
+<summary>Given two sorted arrays nums1 and nums2, we need to find the median of the merged sorted array.</summary>
+
+
+### Approach:
+1. Merge the two arrays into a single sorted array.
+2. Find the median of the merged array.
+
+### Corner Cases:
+- If one of the arrays is empty, the median will be in the other array.
+- If the combined length of both arrays is odd, the median will be the middle element.
+- If the combined length of both arrays is even, the median will be the average of the two middle elements.
+
+ ### Time and space complexity
+**Time Complexity: O(m + n)** - Linear time complexity as we iterate through both arrays once.
+**Space Complexity: O(m + n)** - The merged array requires space to store all the elements.
+  
+```java
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int m = nums1.length;
+        int n = nums2.length;
+        int[] merged = new int[m + n];
+        
+        int i = 0, j = 0, k = 0;
+        while (i < m && j < n) {
+            if (nums1[i] <= nums2[j]) {
+                merged[k++] = nums1[i++];
+            } else {
+                merged[k++] = nums2[j++];
+            }
+        }
+        
+        while (i < m) {
+            merged[k++] = nums1[i++];
+        }
+        
+        while (j < n) {
+            merged[k++] = nums2[j++];
+        }
+        
+        int medianIndex = (m + n) / 2;
+        if ((m + n) % 2 == 0) {
+            return (merged[medianIndex - 1] + merged[medianIndex]) / 2.0;
+        } else {
+            return merged[medianIndex];
+        }
+    }
+}
+```
+
+### Dry Run:
+dry run the code using the given example: `nums1 = [1,2]`, `nums2 = [3,4]`.
+
+1. Initialize `m` as 2 (length of `nums1`) and `n` as 2 (length of `nums2`).
+2. Create a new array `merged` of size `m + n`, i.e., `merged` will have a size of 4.
+3. Initialize three pointers: `i` for `nums1`, `j` for `nums2`, and `k` for `merged` (all starting from index 0).
+4. Start the while loop. Since both `i` and `j` are less than their respective array lengths, the loop continues.
+5. Compare the first elements of `nums1` and `nums2`. As 1 is less than 3, we assign `merged[0]` as 1 and increment `i` and `k` by 1.
+6. The loop continues. Now compare the second elements of `nums1` and `nums2`. As 2 is less than 3, we assign `merged[1]` as 2 and increment `i` and `k` by 1.
+7. Now, `nums1` has no more elements, but `nums2` still has elements. Copy the remaining elements of `nums2` to `merged`.
+8. The loop ends. Both `i` and `j` are greater than or equal to their respective array lengths.
+9. Calculate the median index as `(m + n) / 2`, which is 2 in this case.
+10. Since the combined length of both arrays is even, return the average of `merged[1]` and `merged[2]`, i.e., (2 + 3) / 2.0 = 2.
+
+  
+
+</details>
+
+  <details>
+<summary>Push Operation In Array</summary>
+    
 
 The `PushOperationInArray` class demonstrates adding elements to an array using the `push` operation. It provides the following functionality:
 
@@ -51,4 +122,6 @@ The above code creates an instance of `PushOperationInArray`, adds the items "Ah
 - `push`: A method that adds an item to the array.
 - `Arrays.copyOf`: A method that creates a new array with a specified length and copies the elements from the original array.
 - `main`: The entry point of the Java program.
-```
+
+    
+</details>
