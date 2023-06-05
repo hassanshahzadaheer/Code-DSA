@@ -20,7 +20,20 @@ The repository is organized into different directories, each focusing on a speci
 - `DynamicProgramming`: Implementations of dynamic programming algorithms for solving optimization problems.
 
 Feel free to explore the directories and browse the code. Each directory contains detailed explanations, code examples, and notes to help you understand the concepts and algorithms better.
+---
+## List of common time complexity terms used in Big O notation:
 
+1. **O(1)**: Constant time complexity. The algorithm takes a constant amount of time to complete, regardless of the input size.
+2. **O(log n)**: Logarithmic time complexity. The algorithm's running time increases logarithmically with the input size.
+3. **O(n)**: Linear time complexity. The algorithm's running time increases linearly with the input size.
+4. **O(n log n)**: Linearithmic time complexity. The algorithm's running time increases in proportion to the input size multiplied by the logarithm of the input size.
+5. **O(n^2)**: Quadratic time complexity. The algorithm's running time increases quadratically with the input size.
+6. **O(2^n)**: Exponential time complexity. The algorithm's running time grows exponentially with the input size.
+7. **O(n!)**: Factorial time complexity. The algorithm's running time grows factorially with the input size.
+
+These terms represent the rate at which the running time of an algorithm increases as the input size grows. It helps in analyzing and comparing the efficiency of algorithms.
+
+---
 ## Arrays
 
 This directory contains my solutions to various array-related problems. Each problem is implemented in Java and includes detailed explanations, code examples. The goal is to provide a comprehensive collection of array exercises to help you strengthen your understanding of array manipulation, searching, and sorting algorithms.
