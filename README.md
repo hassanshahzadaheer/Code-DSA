@@ -21,6 +21,13 @@ The repository is organized into different directories, each focusing on a speci
 
 Feel free to explore the directories and browse the code. Each directory contains detailed explanations, code examples, and notes to help you understand the concepts and algorithms better.
 
+## Arrays
+
+This directory contains my solutions to various array-related problems. Each problem is implemented in Java and includes detailed explanations, code examples. The goal is to provide a comprehensive collection of array exercises to help you strengthen your understanding of array manipulation, searching, and sorting algorithms.
+
+You can find the solutions to the array problems in the [Arrays](https://github.com/hassanshahzadaheer/Code-DSA/tree/main/Arrays) directory.
+
+
 ## Usage
 
 You can clone this repository to your local machine using the following command:
