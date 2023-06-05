@@ -1,4 +1,66 @@
 <details>
+<summary>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</summary>
+ 
+ ## Approach 
+
+**Hash Map:** The program uses a hash map to store the values from the input array nums as keys and their corresponding indices as values. This allows for efficient lookup of the complement value during the iteration.
+
+## The time complexity of the operations:
+The time complexity of this program is O(n), where n is the length of the nums array. The for loop iterates through each element of nums exactly once. The hash map operations, such as containsKey and put, have an average time complexity of O(1).
+## Space complexity:
+The space complexity of this program is `O(n)`, where n is the length of the nums array. In the worst case, all elements of nums are stored in the hash map.
+## What are the corner cases of the problem?
+
+**Empty Array:** The program handles the case when the nums array is empty. In this case, an empty array is returned.
+
+**No Solution:** If there is no pair of numbers in nums that add up to the target, the program returns an empty array.
+## Source Code Optimal
+
+```
+import java.util.HashMap;
+import java.util.Map;
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            
+            if (map.containsKey(complement)) {
+                return new int[]{map.get(complement), i};
+            }
+            
+            map.put(nums[i], i);
+        }
+        
+        return new int[]{};
+    }
+}
+```
+## Source Code Brute force
+
+```
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+    // loop through each pair of integers in the array
+    for (int i = 0; i < nums.length; i++) {
+        for (int j = i + 1; j < nums.length; j++) {
+            // check if the sum of the pair equals the target
+            if (nums[i] + nums[j] == target) {
+                // if yes, return the indices of the pair
+                return new int[] {i, j};
+            }
+        }
+    }
+    // if no such pair found, return null
+    return null;
+}
+}
+```
+
+ </details>
+<details>
 <summary>Given two sorted arrays nums1 and nums2, we need to find the median of the merged sorted array.</summary>
 
 
