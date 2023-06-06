@@ -187,3 +187,49 @@ The above code creates an instance of `PushOperationInArray`, adds the items "Ah
 
     
 </details>
+ 
+ 
+ <details>
+  <summary>88. Merge Sorted Array
+</summary>
+
+
+## Approach
+Two-pointer approach: We can use a two-pointer approach to merge the arrays. We initialize three pointers: `lastIndexNum1`, `lastIndexNum2`, and `mergedIndex`. We iterate from the end of the arrays and compare elements to merge them into `nums1`. Finally, we handle the remaining elements in `nums2` and place them in the correct positions in `nums1`.
+
+- Time Complexity: O(m + n)
+  - The algorithm iterates through both `nums1` and `nums2` once, so the time complexity is proportional to the combined lengths of the arrays.
+- Space Complexity: O(1)
+  - The algorithm uses only a constant amount of extra space, regardless of the input size.
+
+## Corner Cases
+1. Empty `nums1` and `nums2`:
+   - Both arrays are empty, resulting in no merging.
+2. Empty `nums2`:
+   - `nums2` is empty, so `nums1` remains unchanged.
+3. Empty `nums1`:
+   - `nums1` is empty, and the elements of `nums2` are placed in `nums1` in the required order.
+
+## Dry Run
+
+Initial:
+```plaintext
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+```
+
+| Iteration | lastIndexNum1 | lastIndexNum2 | mergedIndex | nums1                | nums2       |
+|-----------|---------------|---------------|-------------|----------------------|-------------|
+|           | 2             | 2             | 5           | [1, 2, 3, 0, 0, 0]   | [2, 5, 6]   |
+| 1         | 2             | 2             | 4           | [1, 2, 3, 0, 0, 3]   | [2, 5, 6]   |
+| 2         | 1             | 2             | 3           | [1, 2, 3, 0, 2, 3]   | [2, 5, 6]   |
+| 3         | 0             | 2             | 2           | [1, 2, 3, 2, 2, 3]   | [2, 5, 6]   |
+| 4         | 0             | 1             | 1           | [1, 2, 2, 2, 2, 3]   | [2, 5, 6]   |
+| 5         | 0             | 1             | 0           | [1, 2, 2, 2, 2, 3]   | [2, 5, 6]   |
+| 6         | -1            | 1             | -1          | [1, 2, 2, 2, 2, 3]   | [2, 5, 6]   |
+
+Result: [1, 2, 2, 2, 3, 5, 6
+ </details>
+         
