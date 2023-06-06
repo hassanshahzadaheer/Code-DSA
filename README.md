@@ -19,7 +19,9 @@ The repository is organized into different directories, each focusing on a speci
 - `Searching`: Implementations of searching algorithms like linear search, binary search, and interpolation search.
 - `DynamicProgramming`: Implementations of dynamic programming algorithms for solving optimization problems.
 
+
 Feel free to explore the directories and browse the code. Each directory contains detailed explanations, code examples, and notes to help you understand the concepts and algorithms better.
+
 ---
 ## List of common time complexity terms used in Big O notation:
 
