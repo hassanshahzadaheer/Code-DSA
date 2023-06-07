@@ -237,5 +237,133 @@ Result: [1, 2, 2, 2, 3, 5, 6]
  <details>
   <summary>Given an integer array nums, find the subarray with the largest sum, and return its sum.</summary>
   
+  # Maximum Subarray Sum
+
+This is a solution to the maximum subarray sum problem, which finds the contiguous subarray with the largest sum in a given array.
+
+## Approach
+
+The given code uses the brute force approach, iterating through each possible subarray and calculating its sum. It updates the maximum sum if a higher sum is found.
+
+### Time Complexity
+
+The time complexity of the brute force approach is O(n^2) because we have nested loops iterating through the array. For each element, we iterate through the remaining elements to calculate the subarray sum.
+
+### Optimal Solution
+
+To improve the time complexity, an optimal solution using Kadane's algorithm can be used. It has a time complexity of O(n) and is based on the observation that the maximum subarray sum at each index is either the element itself or the element added to the maximum subarray sum at the previous index.
+
+### Space Complexity
+
+The space complexity is O(1) because the code only uses a constant amount of extra space to store variables.
+
+## Corner Cases
+
+The code handles arrays of length 1 and negative numbers as well.
+
+## Source Code
+
+### Brute Force
+
+```java
+class Solution {
+    public static int maxSubArray(int[] nums) {
+        int maxSum = Integer.MIN_VALUE;
+
+        for (int i = 0; i < nums.length; i++) {
+            int currentSum = 0;
+            for (int j = i; j < nums.length; j++) {
+                currentSum += nums[j];
+                if (currentSum > maxSum) {
+                    maxSum = currentSum;
+                }
+            }
+        }
+
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        int maxSum = maxSubArray(nums);
+        System.out.println("Maximum subarray sum: " + maxSum);
+    }
+}
+```
+  ###  Optimal Solution
+
+  ```java
+  class Solution {
+    public static int maxSubArray(int[] nums) {
+        int maxSum = nums[0];
+        int currentSum = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            maxSum = Math.max(maxSum, currentSum);
+        }
+
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        int maxSum = maxSubArray(nums);
+        System.out.println("Maximum subarray sum: " + maxSum);
+    }
+}
+
+  ```
+                 
+## Dry Run
+
+| Iteration | i   | j   | nums[j] | currentSum | maxSum | i++ | j++ | currentSum > maxSum | maxSum = currentSum |
+|-----------|-----|-----|---------|------------|--------|-----|-----|---------------------|---------------------|
+| 0         | 0   | 0   | -2      | -2         | -2     | 1   | 0   | false               | -2                  |
+| 1         | 1   | 1   | 1       | 1          | 1      | 2   | 1   | false               | 1                   |
+| 2         | 2   | 2   | -3      | -
+
+2         | 1      | 3   | 2   | false               | 1                   |
+| 2         | 2   | 3   | 4       | 2          | 2      | 3   | 4   | true                | 2                   |
+| 2         | 2   | 4   | -1      | 1          | 2      | 3   | 5   | false               | 2                   |
+| 2         | 2   | 5   | 2       | 3          | 3      | 3   | 6   | true                | 3                   |
+| 2         | 2   | 6   | 1       | 4          | 4      | 3   | 7   | true                | 4                   |
+| 2         | 2   | 7   | -5      | -1         | 4      | 3   | 8   | false               | 4                   |
+| 2         | 2   | 8   | 4       | 3          | 4      |     |     |                     |                     |
+| 3         | 3   | 3   | 4       | 4          | 4      | 4   | 3   | true                | 4                   |
+| 3         | 3   | 4   | -1      | 3          | 4      | 4   | 5   | false               | 4                   |
+| 3         | 3   | 5   | 2       | 5          | 5      | 4   | 6   | true                | 5                   |
+| 3         | 3   | 6   | 1       | 6          | 6      | 4   | 7   | true                | 6                   |
+| 3         | 3   | 7   | -5      | 1          | 6      | 4   | 8   | false               | 6                   |
+| 3         | 3   | 8   | 4       | 5          | 6      |     |     |                     |                     |
+| 4         | 4   | 4   | -1      | -1         | 6      | 5   | 4   | false               | 6                   |
+| 4         | 4   | 5   | 2       | 1          | 6      | 5   | 6   | false               | 6                   |
+| 4         | 4   | 6   | 1       | 2          | 6      | 5
+
+   | 7   | false               | 6                   |
+| 4         | 4   | 7   | -5      | -3         | 6      | 5   | 8   | false               | 6                   |
+| 4         | 4   | 8   | 4       | 1          | 6      |     |     |                     |                     |
+| 5         | 5   | 5   | 2       | 2          | 6      | 6   | 5   | false               | 6                   |
+| 5         | 5   | 6   | 1       | 3          | 6      | 6   | 7   | false               | 6                   |
+| 5         | 
+
+5   | 7   | -5      | -2         | 6      | 6   | 8   | false               | 6                   |
+| 5         | 5   | 8   | 4       | 2          | 6      |     |     |                     |                     |
+| 6         | 6   | 6   | 1       | 1          | 6      | 7   | 6   | false               | 6                   |
+| 6         | 6   | 7   | -5      | -4         | 6      | 7   | 8   | false               | 6                   |
+| 6         | 6   | 8   | 4       | 0          | 6      |     |     |                     |                     |
+| 7         | 7   | 7   | -5      | -5         | 6      | 8   | 7   | false               | 6                   |
+| 7         | 7   | 8   | 4       | -1         | 6      |     |     |                     |                     |
+| 8         | 8   | 8   | 4       | 4          | 6      |     |     |                     |                     |
+
+Final Max Sum: 6     
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+  
  </details>
          
