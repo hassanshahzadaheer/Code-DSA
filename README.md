@@ -36,6 +36,23 @@ Feel free to explore the directories and browse the code. Each directory contain
 These terms represent the rate at which the running time of an algorithm increases as the input size grows. It helps in analyzing and comparing the efficiency of algorithms.
 
 ---
+
+## List of important algorithmic approaches or techniques in data structure and algorithms (DSA):
+
+2. **Brute Force:** The simplest approach, trying all possible solutions, often with a nested loop.
+3. **Divide and Conquer:** Breaking down a problem into smaller subproblems, solving them recursively, and combining their solutions to get the final answer (e.g., Merge Sort, Quick Sort).
+4. **Dynamic Programming:** Breaking down a problem into smaller overlapping subproblems, solving them once and storing their solutions for future use to avoid redundant calculations (e.g., Fibonacci series, Knapsack problem).
+5. **Greedy Algorithms:** Making locally optimal choices at each step in the hope that it will lead to an optimal solution globally (e.g., Dijkstra's algorithm, Huffman coding).
+6. **Backtracking:** Exploring all possible solutions by incrementally building candidates and undoing choices when they are determined to be incorrect (e.g., N-Queens problem, Sudoku solver).
+7. **Graph Algorithms:** Algorithms that operate on graphs, such as finding the shortest path (e.g., Dijkstra's algorithm), detecting cycles (e.g., Depth-First Search), or finding minimum spanning trees (e.g., Kruskal's algorithm).
+8. **Binary Search:** An efficient search algorithm for sorted arrays by repeatedly dividing the search space in half (e.g., searching in a sorted array, finding a peak element).
+9. **Heap and Priority Queue:** Data structures that allow efficient insertion, deletion, and retrieval of elements with the highest (or lowest) priority (e.g., Heap Sort, Prim's algorithm).
+10. **Hashing: **Using a hash function to map data to an array index, providing fast retrieval, insertion, and deletion of elements (e.g., hash tables, hash-based set and map implementations).
+11. Two Pointers: Maintaining two pointers or indices to traverse an array or a linked list simultaneously, often used for searching, sorting, or dealing with two different parts of the data (e.g., two-sum problem, merging two sorted lists).
+12. **Sliding Window:** Maintaining a window of elements in an array or a substring in a string and efficiently updating it while iterating through the data (e.g., maximum sum subarray, longest substring without repeating characters).
+13. Graph Traversal: Visiting all vertices or nodes in a graph, typically using breadth-first search (BFS) or depth-first search (DFS).
+
+
 ## Arrays
 
 This directory contains my solutions to various array-related problems. Each problem is implemented in Java and includes detailed explanations, code examples. The goal is to provide a comprehensive collection of array exercises to help you strengthen your understanding of array manipulation, searching, and sorting algorithms.
