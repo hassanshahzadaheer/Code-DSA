@@ -351,8 +351,75 @@ class Solution {
 | 8         | 8   | 8   | 4       | 4          | 6      |     |     |                     |                     |
 
 Final Max Sum: 6  
-                                        
-                              
   
  </details>
+  
+  <details>
+   <summary>11. Container With Most Water</summary>
+   Certainly! Here's the information you requested:
+
+1. Approach used in the program:
+   The program you provided uses the two-pointer approach. It initializes two pointers, `left` and `right`, which represent the leftmost and rightmost indices of the subarray being considered. The pointers start at the outer ends of the array and move towards each other, calculating the area between the heights at the pointers. The width of the subarray decreases with each iteration, and the height is determined by the minimum height between the two pointers. By updating the maximum area based on the calculated area, the pointers move inward until they meet, exploring all possible subarrays.
+
+2. Space and time complexity:
+   - Brute Force Solution:
+     - Time Complexity: O(n^2) - The nested `for` loops iterate over all possible pairs of heights, resulting in a quadratic time complexity.
+     - Space Complexity: O(1) - No additional space is used beyond the input array.
+
+   - Optimal (Two-Pointer) Solution:
+     - Time Complexity: O(n) - The two-pointer approach iterates over the array once, with the pointers moving inward until they meet, resulting in linear time complexity.
+     - Space Complexity: O(1) - Only a constant amount of extra space is used to store the variables for the two pointers and the maximum area.
+
+3. Corner Cases and Constraints:
+   - The given solution assumes that the array `height` is not null and has at least two elements.
+   - The heights in the array can be positive integers.
+   - The program calculates the maximum area of a container that can be formed using the heights in the array.
+
+4. Source Code:
+   Here are the two versions of the program:
+
+   Brute Force Solution:
+   ```java
+   class Solution {
+       public int maxArea(int[] height) {
+           int maxArea = 0;
+           for (int i = 0; i < height.length - 1; i++) {
+               for (int j = i + 1; j < height.length; j++) {
+                   int length = Math.min(height[i], height[j]);
+                   int width = j - i;
+                   int area = length * width;
+                   maxArea = Math.max(maxArea, area);
+               }
+           }
+           return maxArea;
+       }
+   }
+   ```
+
+   Optimal (Two-Pointer) Solution:
+   ```java
+   class Solution {
+       public int maxArea(int[] height) {
+           int maxArea = 0;
+           int left = 0;
+           int right = height.length - 1;
+
+           while (left < right) {
+               int length = Math.min(height[left], height[right]);
+               int width = right - left;
+               int area = length * width;
+               maxArea = Math.max(maxArea, area);
+
+               if (height[left] < height[right]) {
+                   left++;
+               } else {
+                   right--;
+               }
+           }
+
+           return maxArea;
+       }
+   }
+   ```
+  </details>
          
