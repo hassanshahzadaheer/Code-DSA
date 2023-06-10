@@ -29,15 +29,14 @@
 [link12]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ReverseString.java
 
 
-
-Sure! Here's the updated README with a table of contents:
-
-# Table of Contents
 1. [Two Sum](#two-sum)
 2. [Median of Two Sorted Arrays](#median-of-two-sorted-arrays)
 3. [Push Operation In Array](#push-operation-in-array)
 4. [Merge Sorted Array](#merge-sorted-array)
 5. [Maximum Subarray Sum](#maximum-subarray-sum)
+6. [Container With Most Water](#container-with-most-water)
+
+Now, when you click on "Container With Most Water," it will take you to the target problem.
 
 ## Two Sum
 <details>
