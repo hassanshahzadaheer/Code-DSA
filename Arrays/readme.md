@@ -1,20 +1,18 @@
 ## Table of Contents
 
-Certainly! Here's the updated table with an additional column for the concept:
-
-| Problem Name                                 | Time and Space Complexity | Approach             | Concept                      |
-| -------------------------------------------- | ------------------------- | -------------------- | ---------------------------- |
+| Problem Name                                 | Time and Space Complexity | Approach             | Concept                                               |
+| -------------------------------------------- | ------------------------- | -------------------- | ----------------------------------------------------- |
 | [ContainerWithMostWater.java][link1]          | O(n)                      | Two Pointer          | [Container With Most Water](#container-with-most-water) |
-| [DeleteAtIndexOperationInArray.class][link2]  | -                         | -                    | -                            |
-| [FindIndexInArray.java][link3]                | O(n)                      | Hash Table           | [Two Sum](#two-sum)          |
+| [DeleteAtIndexOperationInArray.class][link2]  | -                         | -                    | -                                                     |
+| [FindIndexInArray.java][link3]                | O(n)                      | Hash Table           | [Two Sum](#two-sum)                                  |
 | [FindLastIndexInArray.java][link4]            | O(n)                      | -                    | [Median of Two Sorted Arrays](#median-of-two-sorted-arrays) |
-| [FindNumbersWithEvenNumber.java][link5]       | O(n)                      | -                    | [Push Operation In Array](#push-operation-in-array) |
-| [LeetCodeMergeSortedArray.java][link6]        | O(n)                      | Two Pointer          | [Merge Sorted Array](#merge-sorted-array) |
-| [MaximumSubarray.java][link7]                 | O(n)                      | Dynamic Programming | [Maximum Subarray Sum](#maximum-subarray-sum) |
-| [MedianTwoSortedArrays.java][link8]           | O(log(min(m, n)))         | Binary Search        | [Container With Most Water](#container-with-most-water) |
-| [MergeSortedArrayOptimizeSolution.java][link9] | O(m + n)                  | Two Pointer          | [Merge Sorted Array](#merge-sorted-array) |
-| [MergeSortedArraySimpleSolution.java][link10]  | O(m + n)                  | Merge                | [Maximum Subarray Sum](#maximum-subarray-sum) |
-| [PushOperationInArray.java][link11]            | O(1)                      | -                    | [Push Operation In Array](#push-operation-in-array) |
+| [FindNumbersWithEvenNumber.java][link5]       | O(n)                      | -                    | [Push Operation In Array](#push-operation-in-array)   |
+| [LeetCodeMergeSortedArray.java][link6]        | O(n)                      | Two Pointer          | [Merge Sorted Array](#merge-sorted-array)             |
+| [MaximumSubarray.java][link7]                 | O(n)                      | Dynamic Programming | [Maximum Subarray Sum](#maximum-subarray-sum)         |
+| [MedianTwoSortedArrays.java][link8]           | O(log(min(m, n)))         | Binary Search        | [Median of Two Sorted Arrays](#median-of-two-sorted-arrays) |
+| [MergeSortedArrayOptimizeSolution.java][link9] | O(m + n)                  | Two Pointer          | [Merge Sorted Array](#merge-sorted-array)             |
+| [MergeSortedArraySimpleSolution.java][link10]  | O(m + n)                  | Merge                | [Maximum Subarray Sum](#maximum-subarray-sum)         |
+| [PushOperationInArray.java][link11]            | O(1)                      | -                    | [Push Operation In Array](#push-operation-in-array)   |
 | [ReverseString.java][link12]                  | O(n)                      | Two Pointer          | [Median of Two Sorted Arrays](#median-of-two-sorted-arrays) |
 
 [link1]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ContainerWithMostWater.java
@@ -26,24 +24,11 @@ Certainly! Here's the updated table with an additional column for the concept:
 [link7]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MaximumSubarray.java
 [link8]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MedianTwoSortedArrays.java
 [link9]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArrayOptimizeSolution.java
-[link10]: https://github.com/hassanshahzada
+[
 
-heer/Code-DSA/blob/main/Arrays/MergeSortedArraySimpleSolution.java
+link10]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArraySimpleSolution.java
 [link11]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/PushOperationInArray.java
 [link12]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ReverseString.java
-
-# Table of Contents
-1. [Two Sum](#two-sum)
-   - Concept: [Container With Most Water](#container-with-most-water)
-2. [Median of Two Sorted Arrays](#median-of-two-sorted-arrays)
-   - Concept: [Push Operation In Array](#push-operation-in-array)
-3. [Push Operation In Array](#push-operation-in-array)
-   - Concept: [Merge Sorted Array](#merge-sorted-array)
-4. [Merge Sorted Array](#merge-sorted-array)
-   - Concept: [Maximum Subarray Sum](#maximum-subarray-sum)
-5. [Maximum Subarray Sum](#maximum-subarray-sum)
-   - Concept: [Container With Most Water](#container-with-most-water)
-6. [Container With Most Water](#container-with-most-water)
 
 ## Two Sum
 <details>
