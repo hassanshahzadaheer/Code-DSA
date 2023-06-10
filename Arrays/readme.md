@@ -24,9 +24,7 @@
 [link7]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MaximumSubarray.java
 [link8]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MedianTwoSortedArrays.java
 [link9]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArrayOptimizeSolution.java
-[
-
-link10]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArraySimpleSolution.java
+[link10]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArraySimpleSolution.java
 [link11]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/PushOperationInArray.java
 [link12]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ReverseString.java
 
