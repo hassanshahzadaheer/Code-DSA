@@ -1,3 +1,34 @@
+## Table of Contents
+
+| Problem Name                                 | Time and Space Complexity | Approach             |
+| -------------------------------------------- | ------------------------- | -------------------- |
+| [ContainerWithMostWater.java][link1]          | O(n)                      | Two Pointer          |
+| [DeleteAtIndexOperationInArray.class][link2]  | -                         | -                    |
+| [FindIndexInArray.java][link3]                | O(n)                      | Hash Table           |
+| [FindLastIndexInArray.java][link4]            | O(n)                      | -                    |
+| [FindNumbersWithEvenNumber.java][link5]       | O(n)                      | -                    |
+| [LeetCodeMergeSortedArray.java][link6]        | O(n)                      | Two Pointer          |
+| [MaximumSubarray.java][link7]                 | O(n)                      | Dynamic Programming |
+| [MedianTwoSortedArrays.java][link8]           | O(log(min(m, n)))         | Binary Search        |
+| [MergeSortedArrayOptimizeSolution.java][link9] | O(m + n)                  | Two Pointer          |
+| [MergeSortedArraySimpleSolution.java][link10]  | O(m + n)                  | Merge                |
+| [PushOperationInArray.java][link11]            | O(1)                      | -                    |
+| [ReverseString.java][link12]                  | O(n)                      | Two Pointer          |
+
+[link1]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ContainerWithMostWater.java
+[link2]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/DeleteAtIndexOperationInArray.class
+[link3]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/FindIndexInArray.java
+[link4]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/FindLastIndexInArray.java
+[link5]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/FindNumbersWithEvenNumber.java
+[link6]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/LeetCodeMergeSortedArray.java
+[link7]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MaximumSubarray.java
+[link8]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MedianTwoSortedArrays.java
+[link9]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArrayOptimizeSolution.java
+[link10]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/MergeSortedArraySimpleSolution.java
+[link11]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/PushOperationInArray.java
+[link12]: https://github.com/hassanshahzadaheer/Code-DSA/blob/main/Arrays/ReverseString.java
+
+
 <details>
 <summary>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.</summary>
  
