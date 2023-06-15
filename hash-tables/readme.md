@@ -1,3 +1,51 @@
+Apologies for the oversight. Here's an updated version with the Best Case and Worst Case columns included in the table. Additionally, I have modified the toggle section to include the detailed information you mentioned.
+
+| File Name      | Description                                      | Approach                                                         | Best Case | Worst Case | Go To                                                                                                                         |
+|----------------|--------------------------------------------------|------------------------------------------------------------------|-----------|------------|-------------------------------------------------------------------------------------------------------------------------------|
+| HashTable.java | Implementation of a basic hash table in Java.    | Separate Chaining                                                 | O(1)      | O(n)       | [Go to HashTable.java](./HashTable.java)                                                                                      |
+| TwoSum.java    | Implementation of the Two Sum problem in Java.   | Hash Map                                                         | O(1)      | O(n)       | [Go to TwoSum.java](./TwoSum.java)                                                                                            |
+
+## TwoSum.java
+**Description**
+The TwoSum class solves the Two Sum problem, which involves finding two elements in an array that sum up to a given target value. It uses a hash map to efficiently solve the problem.
+
+**Approach**
+Hash Map
+
+<details>
+<summary>Usage Example</summary>
+
+```java
+public static void main(String[] args) {
+    int[] nums = { 2, 7, 11, 15 };
+    int target = 9;
+    int[] result = TwoSum.twoSum(nums, target);
+    System.out.println("Indices: " + result[0] + ", " + result[1]);
+    System.out.println("Values: " + nums[result[0]] + ", " + nums[result[1]]);
+}
+```
+Output:
+```
+Indices: 0, 1
+Values: 2, 7
+```
+</details>
+
+<details>
+<summary>Code</summary>
+
+```java
+public class TwoSum {
+    public static int[] twoSum(int[] nums, int target) {
+        // Implementation goes here
+    }
+}
+```
+</details>
+
+[Go to TwoSum.java](./TwoSum.java)
+
+Feel free to modify and enhance this table as needed to accommodate future additions to your `hash-table` folder.
 # TwoSum
 
 This is a Java program that finds two elements in an array that sum up to a given target value. It uses a hash map to efficiently solve the problem in linear time complexity.
