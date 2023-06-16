@@ -23,24 +23,58 @@ Separate Chaining
 
 ```java
 public static void main(String[] args) {
-        HashTable myHashTable = new HashTable(10);
-        myHashTable.set("grapes", 10000);
-        myHashTable.set("apples", 9);
-        myHashTable.displayHashTable();
+        HashTable myHashTable = new HashTable(10); // Create a hash table of size 10
+        myHashTable.set("grapes", "10000"); // Set the value for the key "grapes"
+        myHashTable.set("apples", "9"); // Set the value for the key "apples"
+        myHashTable.set("Java", "55"); // Set the value for the key "Java"
+
+        myHashTable.displayHashTable(); // Display the hash table
+
+        String[] keys = myHashTable.getKeys(); // Get the keys from the hash table
+        for (String key : keys) {
+            System.out.println(key); // Print each key
+        }
+
+        Object[] values = myHashTable.getValues(); // Get the values from the hash table
+        for (Object value : values) {
+            System.out.println(value); // Print each value
+        }
     }
 ```
 Output:
 ```
-Index 0: null
-Index 1: null
-Index 2: apples
-Index 3: null
-Index 4: null
-Index 5: null
-Index 6: null
-Index 7: grapes
-Index 8: null
-Index 9: null
+Index 0: Empty
+Index 1: Empty
+Index 2: Empty
+Index 3: grapes -> 10000
+Index 4: Java -> 55
+Index 5: Empty
+Index 6: Empty
+Index 7: Empty
+Index 8: Empty
+Index 9: apples -> 9
+        
+grapes
+Java
+apples
+null
+null
+null
+null
+null
+null
+null
+ 
+10000
+55
+9
+null
+null
+null
+null
+null
+null
+null
 ```
 </details>
 
