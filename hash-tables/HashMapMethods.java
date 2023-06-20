@@ -11,7 +11,7 @@ public class HashMapMethods {
         hashMap.put("apple", 10);
         hashMap.put("banana", 5);
         hashMap.put("orange", 8);
-        // System.out.println("HashMap after put(): " + hashMap);
+        System.out.println("HashMap after put(): " + hashMap);
 
         // // putAll() Adds everything from one box to another box.
         HashMap<String, Integer> otherMap = new HashMap<>();
